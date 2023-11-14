@@ -1,4 +1,4 @@
-package com.gsuretech.movies;
+package com.gsuretech.movies.entity;
 
 
 import lombok.AllArgsConstructor;
