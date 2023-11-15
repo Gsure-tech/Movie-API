@@ -20,6 +20,10 @@ public class MovieService {
 
     public Optional<Movie> singleMovie(String imdbId) {
 
-        return  movieRepository.findMovieByImdbId(imdbId);
+        return  movieRepository.findMoviesByImdbId(imdbId);
+    }
+
+    public Movie getByReleaseDate(String title) {
+        return movieRepository.findMovieByTitle(title);
     }
 }

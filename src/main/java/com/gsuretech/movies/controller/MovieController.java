@@ -30,4 +30,9 @@ public class MovieController {
     public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbId){
         return  new ResponseEntity<>(movieService.singleMovie(imdbId), HttpStatus.OK);
     }
+
+    @GetMapping("/{title}")
+    public ResponseEntity<Movie> getByReleaseDate(@PathVariable String title){
+        return new ResponseEntity<>(movieService.getByReleaseDate(title), HttpStatus.OK);
+    }
 }
